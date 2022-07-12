@@ -15,24 +15,6 @@ let career = document.getElementById('career')
 let closeBar = document.getElementById('close-bar')
 
 
-menuBar.addEventListener('click', () => {
-    if(!querry.matches){
-    menuBar.style.display = 'none'
-    closeBar.style.display = 'block'
-   navBar.style.cssText = 'transform: translateX(0);' 
-   featuresMenuDropdown.style.display = 'none'
-   companyMenuDropdown.style.display = 'none'
-}
-})
-
-closeBar.addEventListener('click', () => {
-    if(!querry.matches){
-    navBar.style.cssText = 'transform: translateX(100%);' 
-    closeBar.style.display = 'none'
-    menuBar.style.display = 'block'
-    }
-})
-
 if(querry.matches){
 navBar.style.cssText = 'transform: translateX(100%);' 
 }
@@ -76,7 +58,19 @@ removeAllMenu.addEventListener('mouseover', ()=> {
 
 
 
+menuBar.addEventListener('click', () => {
+    menuBar.style.display = 'none'
+    closeBar.style.display = 'block'
+   navBar.style.cssText = 'transform: translateX(0);' 
+   featuresMenuDropdown.style.display = 'none'
+   companyMenuDropdown.style.display = 'none'
+})
 
+closeBar.addEventListener('click', () => {
+    navBar.style.cssText = 'transform: translateX(100%);' 
+    closeBar.style.display = 'none'
+    menuBar.style.display = 'block'
+})
 
 
 

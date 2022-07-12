@@ -136,6 +136,7 @@ menu div{
     margin: 0 0rem;
     height: auto;
     gap: 0rem;
+    overflow: hidden;
    }
 
     #illustration-image{

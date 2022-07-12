@@ -29,6 +29,9 @@ featuresMenu.addEventListener('click', () => {
     featuresMenuDropdown.style.display = 'flex'
     company.style.cssText = 
     'padding-top: 10.2rem'
+    companyMenuDropdown.style.display = 'none'
+    career.style.cssText = 
+    ' padding-top: -7.5rem; padding-bottom: -.5rem'
 }
 })
 
@@ -70,6 +73,10 @@ closeBar.addEventListener('click', () => {
     navBar.style.cssText = 'transform: translateX(100%);' 
     closeBar.style.display = 'none'
     menuBar.style.display = 'block'
+    featuresMenuDropdown.style.display = 'none'
+    companyMenuDropdown.style.display = 'none'
+    company.style.cssText = 'padding-top: -10.2rem'
+    career.style.cssText = 'padding-top: -7.5rem; padding-bottom: -.5rem'
 })
 
 

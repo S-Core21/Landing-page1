@@ -8,6 +8,7 @@ body{
     gap: 1rem;
     background-color: hsl(0, 0%, 98%);
     margin: 0 0.5rem;
+    overflow: -moz-hidden-unscrollable;
 }
 header{
     display: flex;
@@ -135,6 +136,7 @@ menu div{
     margin: 0 0rem;
     height: auto;
     gap: 0rem;
+    overflow: hidden;
    }
 
     #illustration-image{
@@ -184,7 +186,7 @@ menu div{
         align-items: initial;
     }
     #navbar{
-        width: 95vw;
+        width: 85vw;
         display: flex;
         flex-direction: column;
         justify-content: initial;

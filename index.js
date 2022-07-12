@@ -16,7 +16,7 @@ let closeBar = document.getElementById('close-bar')
 
 
 if(querry.matches){
-navBar.style.cssText = 'transform: translateX(100%);' 
+navBar.style.cssText = 'display: none;' 
 }
 
 
@@ -64,13 +64,13 @@ removeAllMenu.addEventListener('mouseover', ()=> {
 menuBar.addEventListener('click', () => {
     menuBar.style.display = 'none'
     closeBar.style.display = 'block'
-   navBar.style.cssText = 'transform: translateX(0);' 
+   navBar.style.cssText = 'display: flex;' 
    featuresMenuDropdown.style.display = 'none'
    companyMenuDropdown.style.display = 'none'
 })
 
 closeBar.addEventListener('click', () => {
-    navBar.style.cssText = 'transform: translateX(100%);' 
+    navBar.style.cssText = 'display: none;' 
     closeBar.style.display = 'none'
     menuBar.style.display = 'block'
     featuresMenuDropdown.style.display = 'none'

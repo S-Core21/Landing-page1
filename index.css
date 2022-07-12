@@ -8,7 +8,7 @@ body{
     gap: 1rem;
     background-color: hsl(0, 0%, 98%);
     margin: 0 0.5rem;
-    overflow: -moz-hidden-unscrollable;
+    overflow-x: -moz-hidden-unscrollable;
 }
 header{
     display: flex;
